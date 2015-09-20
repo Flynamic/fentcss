@@ -1,0 +1,64 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(250, 250, 250);
+	font-family: "San Francisco Text";
+}
+
+header {
+	background-color: #fff;
+}
+
+header ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+header ul li {
+	display: block;
+	float: left;
+}
+
+header ul li:hover {
+	background-color: #3c3c3c;
+	color: #fff;
+}
+
+header ul li a {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: inherit;
+	text-decoration: none;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.middle {
+	width: 80%;
+	margin: auto;
+}
+
+.page {
+	margin-top: 20px;
+}
+
+.box {
+	background-color: #fff;
+	border: 1px solid #eee;
+	padding: 20px;
+	padding-top: 0;
+}

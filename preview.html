@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="cms.css"/>
+		<link rel="stylesheet" type="text/css" href="fentcss/fent.css"/>
+		<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="fentcss/fent.js"></script>
+		<script type="text/javascript" src="cms.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="middle">
+				<ul>
+					<!--
+					<li><a href="#">Start</a></li>
+					<li><a href="#">Seiten</a></li>
+					-->
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+		</header>
+		<div class="page middle">
+			<div class="box">
+				<h1>fentCSS</h1>
+				<div class="tabs">
+					<a class="tab selected" href="#tab1">Elements</a>
+					<a class="tab" href="#tab2">Dialog</a>
+					<a class="tab" href="#tab3">Headlines</a>
+				</div>
+				<div id="tab1">
+					<h2>Buttons</h2>
+					<div class="button">Button</div>
+					<div class="button red">Red Button</div>
+					<div class="button green">Green Button</div>
+					<div class="button yellow">Yellow Button</div>
+					<h2>Selection</h2>
+					<input type="checkbox"/> Check
+					<input type="radio" name="wow"/> Radiobutton 1
+					<input type="radio" name="wow"/> Radiobutton 2
+					<input type="radio" name="wow"/> Radiobutton 3
+					<select name="selection">
+						<optgroup label="Group">
+							<option value="o1">Option 1</option>
+							<option value="o2" selected>Option 2</option>
+						</optgroup>
+						<option value="o3">Option 3</option>
+					</select>
+					<br />
+					<h2>Input</h2>
+					<input type="text" placeholder="Normal input ..."/>
+					<input type="text" class="effects" title="Effects input"/>
+					<input type="text" class="effects" title="Effects placeholder input" placeholder="Type some text ..."/>
+					<input type="text" class="effects red" title="Red Effects input"/>
+					<input type="text" class="effects green" title="Green Effects input"/>
+					<input type="text" class="effects yellow" title="Yellow Effects input"/>
+					<br /><br />
+					<textarea placeholder="Normal textarea"></textarea>
+					<br /><br />
+					<textarea class="effects" title="Effects textarea"></textarea>
+				</div>
+				<div id="tab2">
+					<div style="padding: 30px">
+						<div class="dialog" style="position: relative;left:0;top:0;transform:none;">
+							<div class="title">Title</div>
+							<div class="content">Content</div>
+							<div class="buttons">
+								<div class="button" data-role="accept">OK</div>
+								<div class="button" data-role="cancel">Cancel</div>
+							</div>
+						</div>
+					</div>
+					<h2>Creating a dialog</h2>
+					<pre>var dialog = $.dialog({<br />	title: "The title",<br />	content:"Some HTML content",<br />	accept: function ok() {},<br />	cancel: function cancel() {}<br />});<br />dialog.show();</pre>
+				</div>
+				<div id="tab3">
+					<h1>Headline h1</h1>
+					<h2>Headline h2</h2>
+					<h3>Headline h3</h3>
+					<h4>Headline h4</h4>
+					<h5>Headline h5</h5>
+					<h6>Headline h6</h6>
+				</div>
+			</div>
+		</div>
+		<!--
+		<div class="dialog">
+			<div class="title">Title</div>
+			<div class="content">Content</div>
+			<div class="buttons">
+				<div class="button" data-role="accept">OK</div>
+				<div class="button" data-role="cancel">Cancel</div>
+			</div>
+		</div>
+		-->
+	</body>
+</html>
